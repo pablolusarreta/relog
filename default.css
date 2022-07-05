@@ -1,0 +1,99 @@
+/* S A R O B E   D E F A U L T */
+
+/*--------------------- BODY ---------------------*/
+
+body {
+	font-family: 'Gruppo', cursive;
+	color: #fff;
+	margin: 0px;
+	padding: 0px;
+	font-size: 11px;
+	cursor: default;
+	background-color: #060300;
+}
+
+/*--------------------- HTML ---------------------*/
+
+div, body, html, p, table {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+
+/*--------------------- ESTRUCTURA ---------------------*/
+
+table.mes {
+	margin-top: -66px;
+	font-size: 16px;
+	background-color: #363030;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+#relog {
+	position: absolute;
+	width: 447px;
+	height: 447px;
+	background-color: #363030;
+	color: #fff;
+	box-shadow: 3px 3px 6px #000;
+}
+
+div.segmento {
+	position: absolute;
+	background-color: #363030;
+}
+
+div.cubo {
+	position: absolute;
+	font-weight: bold;
+	background-color: #363030;
+	box-shadow: 3px 3px 6px #111;
+	color: #fff;
+}
+
+div.cubofondo {
+	position: absolute;
+	font-weight: bold;
+	background-color: #363030;
+}
+
+span.cubo {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+
+/*  A c c e s o r i o s  */
+
+#cargando {
+	position: relative;
+	left: 45%;
+}
+
+#pie {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	font-size: 9px;
+	color: #666;
+}
+
+@media (min-width: 500px) {
+	body {
+		zoom: 1;
+	}
+}
+
+@media (min-width: 1000px) {
+	body {
+		zoom: 2;
+	}
+}
+
+@media (min-width: 2100px) {
+	body {
+		zoom: 4;
+	}
+}
