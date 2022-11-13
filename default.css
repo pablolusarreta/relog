@@ -1,6 +1,6 @@
-/* S A R O B E   D E F A U L T */
-
-/*--------------------- BODY ---------------------*/
+* {
+	user-select: none;
+}
 
 body {
 	font-family: 'Gruppo', cursive;
@@ -10,10 +10,7 @@ body {
 	font-size: 11px;
 	cursor: default;
 	background-color: #060300;
-	user-select:none;
-
 }
-
 /*--------------------- HTML ---------------------*/
 
 div, body, html, p, table {
@@ -22,9 +19,7 @@ div, body, html, p, table {
 	padding: 0;
 	color: #fff;
 }
-
 /*--------------------- ESTRUCTURA ---------------------*/
-
 table.mes {
 	margin-top: -66px;
 	font-size: 16px;
