@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nuevo whatsapp</title>
+    <link rel="icon" type="image/x-icon" href="whatsapp.ico">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: #333;
+
+        }
+
+        #fondo {
+            position: fixed;
+            display: flex;
+            align-items: center;
+            color: #fff;
+            width: 100vw;
+            height: 100vh;
+            background-image: url("fondo-whatsapp.png");
+            opacity: .15;
+        }
+
+        nav {
+            position: fixed;
+            display: flex;
+            color: #999;
+            align-items: center;
+            width: 100vw;
+            height: 90vh;
+
+        }
+
+        nav>div {
+            width: 100vw;
+            text-align: center;
+        }
+
+        #numero,
+        button {
+            margin: 20px 40px;
+            margin-bottom: 50vh;
+            border-radius: 30px;
+            font-size: small;
+            text-align: center;
+        }
+
+        button {
+            border: none;
+            padding: 15px 20px;
+            color: aliceblue;
+            background-color: #096;
+            transition: background-color .5s;
+            text-align: center;
+        }
+
+        button:hover {
+            background-color: #0a9;
+        }
+
+        #numero {
+            padding: 10px 40px;
+            border: none;
+            font-size: large;
+            font-weight: 600;
+            font-family: monospace, 'Courier New', Courier;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="fondo"></div>
+    <nav>
+        <div>
+            Nº de teléfono<br><br>
+            <input id="numero" type="text">
+            <button onclick="nueva()">Ir al chat</button>
+        </div>
+    </nav>
+    <!--************************************************-->
+    <script>
+        const nueva = () => {
+            location.assign(`https://api.whatsapp.com/send/?phone=${
+                document.getElementById('numero').value
+            }&text&type=phone_number&app_absent=0`)
+        }
+        window.onload = () => {
+            document.getElementById('numero').focus()
+        }
+    </script>
+</body>
+
+</html>
